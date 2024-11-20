@@ -8,8 +8,8 @@ export default function Header() {
         <Image src="/logo.svg" alt="logo" width={250} height={25} />
       </div>
       <div className="header__nav">
-        <nav className="nav">
-          <ul className="nav__ul">
+        <nav className="navbar">
+          <ul className="navbar__links">
             <li>
               <a href="#">Solutions</a>
             </li>

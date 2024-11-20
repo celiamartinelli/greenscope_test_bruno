@@ -1,4 +1,4 @@
-.page {
+/* .page {
   --gray-rgb: 0, 0, 0;
   --gray-alpha-200: rgba(var(--gray-rgb), 0.08);
   --gray-alpha-100: rgba(var(--gray-rgb), 0.05);
@@ -14,9 +14,9 @@
   padding: 80px;
   gap: 64px;
   font-family: var(--font-geist-sans);
-}
+} */
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   .page {
     --gray-rgb: 255, 255, 255;
     --gray-alpha-200: rgba(var(--gray-rgb), 0.145);
@@ -25,8 +25,8 @@
     --button-primary-hover: #ccc;
     --button-secondary-hover: #1a1a1a;
   }
-}
-
+} */
+/* 
 .main {
   display: flex;
   flex-direction: column;
@@ -68,10 +68,7 @@
   padding: 0 20px;
   border: none;
   border: 1px solid transparent;
-  transition:
-    background 0.2s,
-    color 0.2s,
-    border-color 0.2s;
+  transition: background 0.2s, color 0.2s, border-color 0.2s;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -109,7 +106,7 @@ a.secondary {
 }
 
 /* Enable hover only on non-touch devices */
-@media (hover: hover) and (pointer: fine) {
+/* @media (hover: hover) and (pointer: fine) {
   a.primary:hover {
     background: var(--button-primary-hover);
     border-color: transparent;
@@ -165,4 +162,16 @@ a.secondary {
   .logo {
     filter: invert();
   }
+} */
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr); /* 12 colonnes */
+  display: flex;
+  flex-direction: column;
+  column-gap: 14px; /* Gouttières entre colonnes */
+  max-width: 1440px; /* Largeur maximale */
+  margin: 0 auto; /* Centrer horizontalement */
+  padding: 0; /* Marges latérales */
+  width: 100%;
 }
