@@ -1,0 +1,22 @@
+.header {
+  background-color: lightgreen;
+  width: 1440px;
+  height: 88px;
+  padding: 24px 124.3px 24px 124px;
+  gap: 0px;
+  opacity: 0px;
+  display: flex;
+  justify-content: space-between;
+}
+.header__logo {
+  background-color: lightpink;
+}
+.nav {
+  background-color: lightblue;
+  display: flex;
+}
+.nav__ul {
+  background-color: lightcoral;
+  display: flex;
+  gap: 40px;
+}
