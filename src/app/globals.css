@@ -3,6 +3,10 @@
   --foreground: #171717;
   --font-inter: "Inter", sans-serif;
   --font-roboto: "Roboto", sans-serif;
+  --primary-dark-green: #3c4a41;
+  --primary-light-green: #f4f8ef;
+  --primary-light-purple: #e2d4fe;
+  --secondary-medium-purple: #946bb6;
 }
 
 @media (prefers-color-scheme: dark) {

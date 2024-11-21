@@ -1,12 +1,12 @@
 .footer-container {
+  color: var(--primary-dark-green);
   height: 532px;
-  background: var(--Primary-Light-Green, #f4f8ef);
+  background: var(--primary-light-green);
   position: relative;
 }
 
 .logo-primary {
   position: absolute;
-
   width: 322px;
   height: 32px;
   top: 120px;
