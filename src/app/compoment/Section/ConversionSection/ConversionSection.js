@@ -4,15 +4,21 @@ import ButtonCta from "../../Button/ButtonCta";
 export default function ConversionSection() {
   return (
     <section className="conversion">
-      <h1>
-        Notre équipe d&apos;experts vous accompagne dans votre démarche ESG.
-      </h1>
       <div>
-        <p>
-          Nos experts vous accompagnent sur toute la verticale ESG/RSE de votre
-          fonds d&apos;investissement ou de votre entreprise : 
-        </p>
-        <ButtonCta />
+        <h1 className="conversion-title">
+          Notre équipe d&apos;experts vous
+          <br /> accompagne dans votre <br /> démarche ESG.
+        </h1>
+
+        <div className="conversion-block">
+          <p className="conversion-text">
+            Nos experts vous accompagnent sur toute la verticale ESG/RSE de
+            votre fonds d&apos;investissement ou de votre entreprise : 
+          </p>
+          <div>
+            <ButtonCta />
+          </div>
+        </div>
       </div>
     </section>
   );
