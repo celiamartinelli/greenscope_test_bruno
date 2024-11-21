@@ -10,10 +10,11 @@ const solutionsLinks = [
 ];
 
 const platformLinks = [
-  { href: "#", text: "Overview" },
-  { href: "#", text: "Features" },
-  { href: "#", text: "Pricing" },
-  { href: "#", text: "Integrations" },
+  { href: "#", text: "Collecte & Reporting ESG" },
+  { href: "#", text: "Bilan Carbone" },
+  { href: "#", text: "Conformité CSRD" },
+  { href: "#", text: "Analyse de la biodiversité" },
+  { href: "#", text: "Analyse des risques et de la double matérialité" },
 ];
 
 const companyLinks = [
@@ -40,67 +41,81 @@ const socialMediaLinks = [
 
 export default function Footer() {
   return (
-    <footer className="footer">
-      <div>
-        <Image src="/logo.svg" alt="logo" width={332} height={32} />
+    <footer className="footer-container">
+      <div className="logo-primary">
         <Image
-          src="/assets/footer/logo-reward.svg"
-          alt="reward"
-          width={130}
-          height={98}
+          className="footer-logo-primary"
+          src="/logo.svg"
+          alt="logo"
+          width={332}
+          height={32}
         />
       </div>
-      <div>
-        <section>
-          <h5>Solutions</h5>
-          <ul>
+      <Image
+        className="footer-logo-reward"
+        src="/assets/footer/logo-reward.svg"
+        alt="reward"
+        width={130}
+        height={98}
+      />
+
+      <div className="footer-links">
+        <section className="links-section1">
+          <h5 className="link-title">Solutions</h5>
+          <ul className="link-container">
             {solutionsLinks.map((link, index) => (
-              <li key={index}>
+              <li className="link-subtitle" key={index}>
                 <Link href={link.href}>{link.text}</Link>
               </li>
             ))}
           </ul>
         </section>
-        <section>
-          <h5>Platform</h5>
-          <ul>
+        <section className="links-section2">
+          <h5 className="link-title">Platform</h5>
+          <ul className="link-container">
             {platformLinks.map((link, index) => (
-              <li key={index}>
+              <li className="link-subtitle" key={index}>
                 <Link href={link.href}>{link.text}</Link>
               </li>
             ))}
           </ul>
         </section>
-        <section>
-          <h5>Company</h5>
-          <ul>
+        <section className="links-section3">
+          <h5 className="link-title">Company</h5>
+          <ul className="link-container">
             {companyLinks.map((link, index) => (
-              <li key={index}>
+              <li className="link-subtitle" key={index}>
                 <Link href={link.href}>{link.text}</Link>
               </li>
             ))}
           </ul>
         </section>
       </div>
-      <div>
-        <div>
-          <Link href="#">Terms of use</Link>
-          <p>and</p>
-          <Link href="#">Privacy policy</Link>
+      <div className="footer-footer">
+        <div className="footer-legal-term">
+          <Link className="legal-term" href="#">
+            Terms of Use
+          </Link>
+          <Link className="legal-privacy" href="#">
+            {" "}
+            and<span className="legal-privacy-span">Privacy policy</span>
+          </Link>
         </div>
-        <div>
-          <ul>
+        <div className="footer-social">
+          <ul className="social-media">
             {socialMediaLinks.map((link, index) => (
-              <li key={index}>
+              <li className="social-media-link" key={index}>
                 <Link href={link.href}>
-                  <Image src={link.src} alt={link.alt} width={20} height={20} />
+                  <Image src={link.src} alt={link.alt} width={36} height={36} />
                 </Link>
               </li>
             ))}
           </ul>
         </div>
-        <div>
-          <p>Copyright © 2024. Greenscope. All rights reserved.</p>
+        <div className="footer-copyright">
+          <p className="copyright">
+            Copyright © 2024. Greenscope. All rights reserved.
+          </p>
         </div>
       </div>
     </footer>

@@ -1,4 +1,161 @@
-footer {
+.footer-container {
   height: 532px;
   background: var(--Primary-Light-Green, #f4f8ef);
+  position: relative;
+}
+
+.logo-primary {
+  position: absolute;
+
+  width: 322px;
+  height: 32px;
+  top: 120px;
+  left: 76px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.footer-logo-primary {
+  width: 275.21px;
+  height: 29.42px;
+}
+
+.footer-logo-reward {
+  position: absolute;
+  top: 223px;
+  left: 124px;
+  padding: 4px 0px 0px 0px;
+}
+
+.footer-links {
+  position: relative;
+  display: flex;
+}
+
+.links-section1 {
+  position: absolute;
+  left: 624px;
+  top: 118px;
+  width: 192px;
+  height: 161px;
+}
+
+.links-section2 {
+  position: absolute;
+  left: 874px;
+  top: 118px;
+  width: 192px;
+  height: 209px;
+}
+
+.links-section3 {
+  position: absolute;
+  left: 1124px;
+  top: 118px;
+  width: 192px;
+  height: 161px;
+}
+
+.link-title {
+  opacity: 60%;
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 19.6px;
+  height: 45px;
+}
+
+.link-container {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.link-subtitle {
+  height: 29px;
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 19.6px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.footer-footer {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  background-color: lightgoldenrodyellow;
+}
+
+.footer-legal-term {
+  position: absolute;
+  top: 480px;
+  left: 124px;
+  gap: 5px;
+}
+.legal-term {
+  font-family: Inter;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14.4px;
+  text-align: left;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+.legal-term-span {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14.4px;
+  text-align: left;
+  text-decoration: none;
+}
+.legal-privacy {
+  font-family: Inter;
+  font-size: 12px;
+  margin-right: 5px;
+}
+.legal-privacy-span {
+  font-family: Inter;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14.4px;
+  text-align: left;
+  text-decoration-line: underline;
+  margin-left: 5px;
+}
+
+.footer-social {
+  position: relative;
+}
+
+.social-media {
+  position: absolute;
+  top: 466px;
+  left: 636px;
+  display: flex;
+  flex-direction: row;
+  width: 168px;
+  height: 36px;
+  gap: 8px;
+}
+
+.social-media-link {
+  width: 36px;
+  height: 36px;
+}
+
+.footer-copyright {
+  position: absolute;
+  top: 478px;
+  left: 1084px;
+  font-family: Inter;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 13.2px;
+  text-align: right;
 }
