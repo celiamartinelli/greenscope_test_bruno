@@ -5,7 +5,7 @@ import ButtonCta from "../../Button/ButtonCta";
 export default function Hero() {
   return (
     <section className="hero">
-      <div className="hero-container">
+      <div>
         <div className="hero-container-photo">
           <Image
             className="hero-photo"
