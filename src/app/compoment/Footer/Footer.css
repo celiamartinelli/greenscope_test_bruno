@@ -1,4 +1,4 @@
 footer {
   height: 532px;
-  background-color: lightskyblue;
+  background: var(--Primary-Light-Green, #f4f8ef);
 }

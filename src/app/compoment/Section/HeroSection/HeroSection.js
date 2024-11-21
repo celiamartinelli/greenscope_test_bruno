@@ -1,5 +1,6 @@
 import Image from "next/image";
 import "./HeroSection.css";
+import ButtonCta from "../../Button/ButtonCta";
 
 export default function Hero() {
   return (
@@ -29,7 +30,7 @@ export default function Hero() {
           />
           <div>
             <a href="#">+500 companies use Greenscope</a>
-            <button type="cta">Get a demo</button>
+            <ButtonCta />
           </div>
         </div>
       </div>

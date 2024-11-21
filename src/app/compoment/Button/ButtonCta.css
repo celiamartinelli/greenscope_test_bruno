@@ -1,0 +1,4 @@
+.buttonCta {
+  background-color: var(--Primary-Light-Purple, #e2d4fe);
+  color: var(--Secondary-Medium-Purple, #946bb6);
+}

@@ -5,7 +5,7 @@ export default function Header() {
   return (
     <header className="header">
       <div className="header__logo">
-        <Image src="/logo.svg" alt="logo" width={250} height={25} />
+        <Image src="/logo.svg" alt="logo" width={332} height={32} />
       </div>
       <div className="header__nav">
         <nav className="navbar">

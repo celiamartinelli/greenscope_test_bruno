@@ -2,3 +2,16 @@
   height: 880px;
   background-color: lightsalmon;
 }
+
+.section-quote {
+  display: flex;
+}
+
+.article {
+  justify-content: center;
+  align-items: center;
+  background-color: #3c4a41;
+  width: 292px;
+  height: 388px;
+  border-radius: 8px;
+}
