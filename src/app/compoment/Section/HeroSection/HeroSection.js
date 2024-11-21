@@ -5,31 +5,40 @@ import ButtonCta from "../../Button/ButtonCta";
 export default function Hero() {
   return (
     <section className="hero">
-      <div>
-        <div>
+      <div className="hero-container">
+        <div className="hero-container-photo">
           <Image
+            className="hero-photo"
             src="/assets/hero/Stocksy.png"
             alt="Stocksy"
-            width={594}
+            width={592}
             height={440}
           />
           <Image
+            className="hero-photo"
             src="/assets/hero/Group.png"
             alt="Stocksy"
-            width={594}
-            height={440}
+            width={592}
+            height={441}
           />
         </div>
         <div>
-          <h2>Where ESG can be leveraged</h2>
+          <h1 className="hero-title">
+            Where ESG
+            <br />
+            can be leveraged
+          </h1>
           <Image
+            className="hero-logo-graphik"
             src="/logo-graphik.svg"
-            alt="logo-graphic"
+            alt="logo-graphik"
             width={64}
             height={64}
           />
-          <div>
-            <a href="#">+500 companies use Greenscope</a>
+          <a className="hero-link" href="#">
+            +500 companies use Greenscope
+          </a>
+          <div className="hero-cta">
             <ButtonCta />
           </div>
         </div>

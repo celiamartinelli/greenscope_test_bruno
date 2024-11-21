@@ -1,4 +1,63 @@
 .hero {
+  color: var(--primary-dark-green);
   height: 789px;
-  background-color: lightblue;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* .hero-container {
+} */
+
+.hero-container-photo {
+  position: absolute;
+  width: 1192px;
+  height: 441px;
+  top: 40px;
+  left: 124px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero-photo {
+  border-radius: 8px;
+}
+
+.hero-title {
+  position: absolute;
+  width: 358px;
+  letter-spacing: -2px;
+  height: 124px;
+  top: 553px;
+  left: 124px;
+  font-family: var(--font-neue-montreal);
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 62.4px;
+  text-align: left;
+}
+
+.hero-logo-graphik {
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  top: 583px;
+  left: 688px;
+}
+
+.hero-link {
+  position: absolute;
+  width: 255px;
+  height: 19px;
+  top: 568px;
+  left: 896px;
+}
+
+.hero-cta {
+  position: absolute;
+  width: Hug (137px) px;
+  height: Fixed (50px) px;
+  top: 613px;
+  left: 878px;
 }
