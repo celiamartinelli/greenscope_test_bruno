@@ -1,4 +1,147 @@
 .consultantbis {
   height: 766px;
-  background-color: lightseagreen;
+  /* background-color: lightseagreen; */
+  color: var(--primary-dark-green);
+  position: relative;
+}
+
+.consultantbis-title {
+  position: absolute;
+  width: 592px;
+  height: 124px;
+  top: 120px;
+  left: 124px;
+  gap: 0px;
+  opacity: 0px;
+  font-family: var(--font-neue-montreal);
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 62.4px;
+  text-align: left;
+  letter-spacing: -1px;
+}
+
+.consultantbis-section {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  /* background-color: lightgray; */
+  width: 1192px;
+  height: 330px;
+  top: 316px;
+  left: 124px;
+  gap: 8px;
+}
+
+.consultantbis-section-data {
+  background-color: var(--primary-light-green);
+  border-radius: 8px;
+  position: relative;
+  width: 592px;
+}
+
+.consultantbis-section-security {
+  background-color: var(--primary-dark-green);
+  border-radius: 8px;
+  color: var(--primary-light-green);
+  position: relative;
+  width: 592px;
+}
+
+.consultantbis-section-data-icon {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  width: 48px;
+  height: 48px;
+}
+
+.consultantbis-section-data-button {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  top: 269px;
+  left: 40px;
+  width: 104px;
+  height: 16px;
+}
+
+.consultantbis-section-data-title {
+  position: absolute;
+  width: 222px;
+  height: 38px;
+  top: 45px;
+  left: 300px;
+  gap: 0px;
+  opacity: 0px;
+  font-family: var(--font-neue-montreal);
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 38.4px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  letter-spacing: -1px;
+}
+
+.consultantbis-section-data-text {
+  position: absolute;
+  width: 252px;
+  height: 96px;
+  top: 202px;
+  left: 300px;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+}
+
+.consultantbis-section-security-icon {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  width: 48px;
+  height: 48px;
+}
+.consultantbis-section-security-button {
+  position: absolute;
+  width: 104px;
+  height: 16px;
+  top: 269px;
+  left: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.consultantbis-section-security-title {
+  position: absolute;
+  width: 117px;
+  height: 38px;
+  top: 45px;
+  left: 300px;
+  gap: 0px;
+  opacity: 0px;
+  font-family: var(--font-neue-montreal);
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 38.4px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  letter-spacing: -1px;
+}
+
+.consultantbis-section-security-text {
+  position: absolute;
+  width: 252px;
+  height: 96px;
+  top: 202px;
+  left: 300px;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
 }
