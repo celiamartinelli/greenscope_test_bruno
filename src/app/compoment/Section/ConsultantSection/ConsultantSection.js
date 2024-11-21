@@ -45,7 +45,12 @@ export default function ConsultantSection() {
           width={394}
           height={16}
         />
-        <section className="consultant-section1">
+
+        <section
+          className={`consultant-section1 ${
+            currentSection === 1 ? "active" : "inactive"
+          }`}
+        >
           <div className="consultant-photo-container">
             <Image
               className="consultant-photo"
@@ -74,7 +79,11 @@ export default function ConsultantSection() {
             </div>
           </div>
         </section>
-        <section className="consultant-section2">
+        <section
+          className={`consultant-section2 ${
+            currentSection === 2 ? "active" : "inactive"
+          }`}
+        >
           <div>
             <Image
               className="consultant-photo"

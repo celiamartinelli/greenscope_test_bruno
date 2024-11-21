@@ -13,7 +13,30 @@
   top: 240px;
   left: 124px;
   height: 505px;
-  overflow: hidden; /* Assurez-vous que les sections ne débordent pas */
+  overflow: hidden;
+}
+
+.consultant-section1,
+.consultant-section2 {
+  position: absolute;
+  width: 100%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.consultant-section1.active {
+  transform: translateX(0); /* Section active visible */
+}
+
+.consultant-section1.inactive {
+  transform: translateX(-55%); /* Section inactive cachée à gauche */
+}
+
+.consultant-section2.active {
+  transform: translateX(0); /* Section active visible */
+}
+
+.consultant-section2.inactive {
+  transform: translateX(55%); /* Section inactive cachée à droite */
 }
 
 .consultant-title {
