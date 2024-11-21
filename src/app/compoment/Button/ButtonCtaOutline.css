@@ -1,0 +1,18 @@
+.buttonCtaOutline {
+  display: flex;
+  flex-direction: row;
+  padding: 12px;
+  width: Hug (173px) px;
+  height: Hug (40px) px;
+  left: 1018.7px;
+  color: var(--Secondary-Medium-Purple, #946bb6);
+  border: 1px solid;
+  border-radius: 6px;
+  border-color: var(--Primary-Light-Purple, #e2d4fe);
+  font-family: var(--font-neue-montreal);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16.8px;
+  text-align: center;
+  gap: 8px;
+}

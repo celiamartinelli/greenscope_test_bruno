@@ -42,9 +42,9 @@ const socialMediaLinks = [
 export default function Footer() {
   return (
     <footer className="footer-container">
-      <div className="logo-primary">
+      <div className="footer-logo-primary">
         <Image
-          className="footer-logo-primary"
+          className="logo-primary"
           src="/logo.svg"
           alt="logo"
           width={332}

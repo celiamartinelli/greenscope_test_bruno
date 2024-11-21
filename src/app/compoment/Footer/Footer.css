@@ -5,7 +5,7 @@
   position: relative;
 }
 
-.logo-primary {
+.footer-logo-primary {
   position: absolute;
   width: 322px;
   height: 32px;
@@ -16,7 +16,7 @@
   align-items: center;
 }
 
-.footer-logo-primary {
+.logo-primary {
   width: 275.21px;
   height: 29.42px;
 }
