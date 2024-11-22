@@ -9,6 +9,10 @@
   --primary-light-green: #f4f8ef;
   --primary-light-purple: #e2d4fe;
   --secondary-medium-purple: #946bb6;
+  --secondary-dark-purple: #453848;
+  --secondary-yellow: #ffdda5;
+  --secondary-light-pink: #ffcccc;
+  --secondary-orange: #ff9b6e;
 }
 
 @media (prefers-color-scheme: dark) {

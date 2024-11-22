@@ -1,62 +1,141 @@
+"use client";
+import { useState } from "react";
 import Image from "next/image";
 import "./SolutionSection.css";
 
+const data = [
+  {
+    id: 1,
+    name: "solution",
+    title: "ESG Data Solution",
+    tags: ["Mot clé associé", "Mot clé associé"],
+    description:
+      "Automatically collect data, launch campaigns, establish quality processes, and build an organization that mirrors your own, all within our platform. Benchmark best practices, set scoring rules, and track performance with custom dashboards.",
+    imgSrc: "/assets/solutions/group-esg.svg",
+    className: "solution-navbar-cta-solution",
+  },
+  {
+    id: 2,
+    name: "assessment",
+    title: "Carbon Assessment",
+    tags: ["Mot clé associé", "Mot clé associé"],
+    description:
+      "Choose a Carbon module from our options, estimate emissions across Scopes 1, 2, and 3, generate footprint reports, receive recommendations, and build your decarbonization strategy.",
+    imgSrc: "/assets/solutions/group-carbon.svg",
+    className: "solution-navbar-cta-assessment",
+  },
+  {
+    id: 3,
+    name: "csrd",
+    title: "CSRD",
+    tags: ["Mot clé associé", "Mot clé associé"],
+    description:
+      "Leverage our expertise and tools to demystify CSRD and unlock opportunities. Conduct your double materiality assessments, perform gap analyses, collect data, and prepare audit-ready reports.",
+    imgSrc: "/assets/solutions/group-crd.svg",
+    className: "solution-navbar-cta-csrd",
+  },
+  {
+    id: 4,
+    name: "impact",
+    title: "Impact Analysis & Compliance",
+    titleWithBreak: (
+      <>
+        Impact Analysis <br /> & Compliance
+      </>
+    ),
+    tags: ["Mot clé associé", "Mot clé associé"],
+    description:
+      "Analyze your biodiversity impact and dependencies, achieve Taxonomy alignment, conduct SFDR and PAI analysis, and stay updated on regulatory news",
+    imgSrc: "/assets/solutions/group-impact.svg",
+    className: "solution-navbar-cta-impact",
+  },
+];
+
 export default function SolutionSection() {
+  const [currentSection, setCurrentSection] = useState(1);
+
+  const handleSectionChange = (id) => {
+    setCurrentSection(id);
+  };
+
+  const currentData = data.find((item) => item.id === currentSection);
+
   return (
     <section className="solution">
-      <h1>All your ESG journey needs in one platform</h1>
+      <h2 className="solution-title">
+        All your ESG journey <br />
+        needs in one platform
+      </h2>
       <nav>
-        <ul>
-          <li>
-            <button type="btn">ESG Data Solution</button>
-          </li>
-          <li>
-            <button type="btn">Carbon Assessment</button>
-          </li>
-          <li>
-            <button type="btn">CSRD</button>
-          </li>
-          <li>
-            <button type="btn">Impact Analysis & Compliance</button>
-          </li>
+        <ul className="solution-navbar">
+          {data.map((item) => (
+            <li
+              key={item.id}
+              className={`solution-navbar-cta ${item.className}  ${
+                currentSection === item.id ? "active" : ""
+              }`}
+              onClick={() => handleSectionChange(item.id)}
+            >
+              <button type="cta">{item.title}</button>
+            </li>
+          ))}
         </ul>
       </nav>
 
-      <section>
-        <div>
-          <div>
-            <h2>ESG Data Solution</h2>
-            <div>
-              <tag>Mots clé associé</tag>
-              <tag>Mots clé associé</tag>
+      <section
+        className={`solution-section bg-${currentData.name} ${
+          currentSection === currentData.id ? "active" : ""
+        }`}
+      >
+        {data
+          .filter((item) => item.id === currentSection)
+          .map((item) => (
+            <div key={item.id}>
+              <div className="section-left">
+                <div
+                  className={`section-left-container ${
+                    currentSection === 4 ? "section-left-container-impact" : ""
+                  }`}
+                >
+                  <h3 className="section-left-title">
+                    {currentData.titleWithBreak || item.title}
+                  </h3>
+                  <div className="section-left-container-tag">
+                    {item.tags.map((keyword, index) => (
+                      <tag
+                        className={`section-left-tag tag-${currentData.name} `}
+                        key={index}
+                      >
+                        {keyword}
+                      </tag>
+                    ))}
+                  </div>
+                </div>
+
+                <p className="section-text text-opacity">{item.description}</p>
+              </div>
+
+              <div className="section-right">
+                <div>
+                  <Image
+                    src={item.imgSrc}
+                    alt={item.title}
+                    width={492}
+                    height={380}
+                  />
+                </div>
+                <button type="cta">
+                  Learn more
+                  <Image
+                    src="/arrow-right-solid.svg"
+                    alt="arrow-right"
+                    width={16}
+                    height={16}
+                  />
+                </button>
+              </div>
             </div>
-          </div>
-          <div>
-            <p>
-              Automatically collect data, launch campaigns, establish quality
-              processes, and build an organization that mirrors your own, all
-              within our platform. Benchmark best practices, set scoring rules,
-              and track performance with custom dashboards.
-            </p>
-          </div>
-        </div>
-        <div>
-          <Image
-            src="/assets/solutions/group-esg.svg"
-            alt="placeholder"
-            width={492}
-            height={380}
-          />
-          <button type="cta">
-            Learn more
-            <Image
-              src="/arrow-right-solid.svg"
-              alt="arrow-right-solid"
-              width={16}
-              height={16}
-            />
-          </button>
-        </div>
+          ))}
       </section>
     </section>
   );
