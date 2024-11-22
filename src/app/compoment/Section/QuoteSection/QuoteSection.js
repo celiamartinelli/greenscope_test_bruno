@@ -18,7 +18,8 @@ nous a permis de mener une campagne de collecte efficace auprès de l’ensemble
     imgLogo: "/logo-graphik.svg",
     img: "/assets/quote/person2.png",
     description: "Romain - Manager RH",
-    text: "”Un outil puissant et simple pour nos évaluations internes.”",
+    text: `"Greenscope nous a permis de mettre en place un nouveau processus de collecte et d\'analyse des données ESG. Ce processus est plus efficace et plus fiable. 
+    Nous sommes très satisfaits de l'outil et apprécions le soutien des experts de Greenscope."`,
     className: "quote-article-light-green",
     classNameFooter: "quote-article-footer-light-green",
     classNameFooterSubtitle: "quote-article-footer-subtitle-light-green",
@@ -47,7 +48,8 @@ nous a permis de mener une campagne de collecte efficace auprès de l’ensemble
     imgLogo: "/logo-graphik-light-green.svg",
     img: "/assets/quote/person4.png",
     description: "Rémy - Manager RH",
-    text: "”Un outil puissant et simple pour nos évaluations internes.”",
+    text: `"La plateforme Greenscope 
+    nous a permis de mener une campagne de collecte efficace auprès de l’ensemble de nos participations, avec le soutien d’une équipe réactive et de qualité. La plateforme est intuitive, et les questionnaires sont fluides.”`,
     className: "quote-article-dark-green",
     classNameFooter: "quote-article-footer-dark-green",
     classNameFooterSubtitle: "quote-article-footer-subtitle-dark-green",
@@ -56,7 +58,8 @@ nous a permis de mener une campagne de collecte efficace auprès de l’ensemble
     imgLogo: "/logo-graphik.svg",
     img: "/assets/quote/person2.png",
     description: "Romain - Manager RH",
-    text: "”Un outil puissant et simple pour nos évaluations internes.”",
+    text: `"Greenscope nous a permis de mettre en place un nouveau processus de collecte et d\'analyse des données ESG. Ce processus est plus efficace et plus fiable. 
+    Nous sommes très satisfaits de l'outil et apprécions le soutien des experts de Greenscope."`,
     className: "quote-article-light-green",
     classNameFooter: "quote-article-footer-light-green",
     classNameFooterSubtitle: "quote-article-footer-subtitle-light-green",
@@ -71,47 +74,29 @@ nous a permis de mener une campagne de collecte efficace auprès de l’ensemble
     classNameFooter: "quote-article-footer-dark-green",
     classNameFooterSubtitle: "quote-article-footer-subtitle-dark-green",
   },
-  {
-    imgLogo: "/logo-graphik-light-green.svg",
-    img: "/assets/quote/person5.png",
-    description: "Philippe - Chef projet ESG",
-    text: `"La plateforme Greenscope 
-nous a permis de mener une campagne de collecte efficace auprès de l’ensemble de nos participations, avec le soutien d’une équipe réactive et de qualité. La plateforme est intuitive, et les questionnaires sont fluides.”`,
-    className: "quote-article-dark-green",
-    classNameFooter: "quote-article-footer-dark-green",
-    classNameFooterSubtitle: "quote-article-footer-subtitle-dark-green",
-  },
-  {
-    imgLogo: "/logo-graphik.svg",
-    img: "/assets/quote/person3.png",
-    description: "Cassandra - Cheffe projet ESG",
-    text: `"Greenscope nous a permis de mettre en place un nouveau processus de collecte et d\'analyse des données ESG. Ce processus est plus efficace et plus fiable. 
-    Nous sommes très satisfaits de l'outil et apprécions le soutien des experts de Greenscope."`,
-    className: "quote-article-light-green",
-    classNameFooter: "quote-article-footer-light-green",
-    classNameFooterSubtitle: "quote-article-footer-subtitle-light-green",
-  },
-  {
-    imgLogo: "/logo-graphik-light-green.svg",
-    img: "/assets/quote/person4.png",
-    description: "Rémy - Manager RH",
-    text: "”Un outil puissant et simple pour nos évaluations internes.”",
-    className: "quote-article-dark-green",
-    classNameFooter: "quote-article-footer-dark-green",
-    classNameFooterSubtitle: "quote-article-footer-subtitle-dark-green",
-  },
 ];
 
 export default function QuoteSection() {
-  const [currentSelection, setCurrentSelection] = useState(0);
+  const [currentSelection, setCurrentSelection] = useState(2);
 
   const handleClick = (index) => {
     setCurrentSelection(index);
   };
+
   return (
     <section className="quote">
       <h2 className="quote-title">+500 companies use Greenscope</h2>
-      <div className="quote-section">
+      <div
+        className="quote-section"
+        style={{
+          transform:
+            currentSelection === 0
+              ? "translateX(5rem)"
+              : currentSelection === 6
+              ? "translateX(-9rem)"
+              : "none",
+        }}
+      >
         {data.map((item, index) => (
           <div
             key={index}
