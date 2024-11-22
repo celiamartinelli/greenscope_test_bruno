@@ -1,17 +1,151 @@
 .quote {
   height: 880px;
   /* background-color: lightsalmon; */
+  color: var(--primary-dark-green);
+  position: relative;
+  border: solid 1px rgba(0, 51, 0, 0.2);
+  overflow: hidden;
+}
+
+.quote-title {
+  position: absolute;
+  width: 931.3px;
+  height: 48px;
+  top: 120px;
+  left: 144px;
+  font-family: var(--font-neue-montreal);
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 48px;
+  text-align: left;
 }
 
 .section-quote {
+  position: absolute;
+  width: 1, 956px;
+  height: 388px;
+  top: 240px;
+  left: -46px;
+  gap: 16px;
+
   display: flex;
 }
 
-.article {
+.quote-carroussel {
+  position: absolute;
+  width: 119.2px;
+  height: 40px;
+  top: 715px;
+  left: 1016.37px;
+  gap: 4px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* background-color: lightcoral; */
+}
+
+.quote-button {
+  border: 0.8px solid var(--primary-dark-green);
+  width: 57.6px;
+  height: 40px;
+  gap: 3.2px;
+  border-radius: 80px;
+  display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
+}
+
+.quote-article {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   background-color: #3c4a41;
   width: 292px;
   height: 388px;
   border-radius: 8px;
+  color: var(--primary-light-green);
+  position: relative;
+}
+
+.quote-vector {
+  position: absolute;
+  width: 200px;
+  height: 14px;
+  left: 95px;
+}
+
+.quote-article-text {
+  position: absolute;
+  width: 244px;
+  height: 192px;
+  top: 24px;
+  left: 24px;
+  font-family: var(--font-neue-montreal);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+}
+
+.quote-article-footer {
+  position: absolute;
+  width: 292px;
+  height: 98px;
+  top: 290px;
+  gap: 0px;
+  border: solid 1px rgba(214, 224, 211, 0.4);
+}
+
+.quote-article-footer-logo {
+  position: absolute;
+  width: 16px;
+  height: 16.03px;
+  top: 29px;
+  left: 24px;
+}
+.quote-article-footer-title {
+  position: absolute;
+  width: 70px;
+  height: 26px;
+  top: 24px;
+  left: 48px;
+  font-family: var(--font-neue-montreal);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 26px;
+  text-align: left;
+}
+.quote-article-footer-subtitle {
+  position: absolute;
+  width: 244px;
+  height: 20px;
+  top: 54px;
+  left: 24px;
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19.6px;
+  text-align: left;
+  color: rgba(214, 224, 211, 0.7);
+}
+
+.quote-person {
+  border-radius: 8px;
+}
+
+.quote-text {
+  position: absolute;
+  width: 392px;
+  height: 60px;
+  top: 700px;
+  left: 144px;
+  opacity: 0.8px;
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19.6px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
 }

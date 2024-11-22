@@ -23,16 +23,16 @@ export default function ConsultantSection() {
             <Image
               src="/arrow-left.svg"
               alt="arrow-left"
-              width={19.2}
-              height={19.2}
+              width={11.2}
+              height={8}
             />
           </button>
           <button className="consultant-button" onClick={handleNext}>
             <Image
               src="/arrow-right.svg"
               alt="arrow-right"
-              width={19.2}
-              height={19.2}
+              width={11.2}
+              height={8}
             />
           </button>
         </div>
