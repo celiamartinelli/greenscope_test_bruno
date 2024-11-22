@@ -38,7 +38,7 @@
 }
 
 .quote-section {
-  /* backgrounqd-color: lightcoral; */
+  /* background-color: lightcoral; */
   position: absolute;
   top: 240px;
   left: -46px;
@@ -184,9 +184,9 @@
   color: rgba(60, 74, 65, 0.7);
 }
 
-.quote-person {
+/* .quote-person {
   border-radius: 8px;
-}
+} */
 
 .quote-text {
   position: absolute;
@@ -216,6 +216,6 @@
 }
 
 .item:hover {
-  transform: scale(1.1); /* Effet au survol */
+  transform: scale(1.1) translateY(11px);
   opacity: 0.8;
 }
