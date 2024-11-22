@@ -176,8 +176,8 @@ export default function QuoteSection() {
             }
           >
             <Image
-              src="/arrow-right-dark-green.svg"
-              alt="arrow-right-dark-green"
+              src="/arrow-right-green.svg"
+              alt="arrow-right-green"
               width={11.2}
               height={8}
             />

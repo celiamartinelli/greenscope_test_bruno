@@ -30,7 +30,7 @@ export default function Hero() {
           </h1>
           <Image
             className="hero-logo-graphik"
-            src="/logo-graphik.svg"
+            src="/logo-graphik-dark-green.svg"
             alt="logo-graphik"
             width={64}
             height={64}

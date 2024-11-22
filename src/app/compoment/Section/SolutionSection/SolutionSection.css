@@ -158,6 +158,36 @@
   justify-content: space-between;
 }
 
+.section-graphik-container {
+  position: relative;
+  width: 492px;
+  height: 380px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.section-graphik-logo {
+  position: absolute;
+  width: 32px;
+  height: 32.06px;
+  top: 16px;
+  left: 16px;
+}
+
+.section-graphik-block {
+  position: absolute;
+  width: 514px;
+  height: 287.76px;
+  top: 48px;
+  left: 81px;
+  background-color: lightcoral;
+  border-radius: 8px;
+}
+
+.section-graphik-image {
+}
+
 .bg-solution {
   background-color: var(--secondary-yellow);
   color: var(--secondary-dark-purple);
@@ -198,4 +228,13 @@
 
 .text-opacity {
   opacity: 70%;
+}
+
+.solution-btn {
+  height: 16px;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  justify-content: flex-end;
+  align-items: center;
 }
