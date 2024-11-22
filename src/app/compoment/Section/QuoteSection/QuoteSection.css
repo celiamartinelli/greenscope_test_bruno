@@ -7,6 +7,23 @@
   overflow: hidden;
 }
 
+.quote-item {
+  position: absolute;
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.quote-item.active {
+  opacity: 1;
+  transform: scale(1);
+  z-index: 1;
+}
+
+.quote-item.hidden {
+  z-index: 0;
+}
+
 .quote-title {
   position: absolute;
   width: 931.3px;
@@ -20,15 +37,17 @@
   text-align: left;
 }
 
-.section-quote {
+.quote-section {
+  /* backgrounqd-color: lightcoral; */
   position: absolute;
-  width: 1, 956px;
-  height: 388px;
   top: 240px;
   left: -46px;
-  gap: 16px;
-
+  width: 1956px;
+  height: 388px;
   display: flex;
+  justify-content: flex-start;
+  overflow: hidden;
+  gap: 16px;
 }
 
 .quote-carroussel {
@@ -56,15 +75,27 @@
   align-items: center;
 }
 
-.quote-article {
+.quote-article-dark-green {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: #3c4a41;
+  background-color: var(--primary-dark-green);
   width: 292px;
   height: 388px;
   border-radius: 8px;
   color: var(--primary-light-green);
+  position: relative;
+}
+
+.quote-article-light-green {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--primary-light-green);
+  width: 292px;
+  height: 388px;
+  border-radius: 8px;
+  color: var(--primary-dark-green);
   position: relative;
 }
 
@@ -88,13 +119,22 @@
   text-align: left;
 }
 
-.quote-article-footer {
+.quote-article-footer-dark-green {
   position: absolute;
   width: 292px;
   height: 98px;
   top: 290px;
   gap: 0px;
   border: solid 1px rgba(214, 224, 211, 0.4);
+}
+
+.quote-article-footer-light-green {
+  position: absolute;
+  width: 292px;
+  height: 98px;
+  top: 290px;
+  gap: 0px;
+  border-top: solid 1px rgba(60, 74, 65, 0.2);
 }
 
 .quote-article-footer-logo {
@@ -116,7 +156,7 @@
   line-height: 26px;
   text-align: left;
 }
-.quote-article-footer-subtitle {
+.quote-article-footer-subtitle-dark-green {
   position: absolute;
   width: 244px;
   height: 20px;
@@ -128,6 +168,20 @@
   line-height: 19.6px;
   text-align: left;
   color: rgba(214, 224, 211, 0.7);
+}
+
+.quote-article-footer-subtitle-light-green {
+  position: absolute;
+  width: 244px;
+  height: 20px;
+  top: 54px;
+  left: 24px;
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19.6px;
+  text-align: left;
+  color: rgba(60, 74, 65, 0.7);
 }
 
 .quote-person {
@@ -148,4 +202,20 @@
   text-align: left;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
+}
+
+.item-container {
+  display: inline-block;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.item {
+  border-radius: 8px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.item:hover {
+  transform: scale(1.1); /* Effet au survol */
+  opacity: 0.8;
 }
