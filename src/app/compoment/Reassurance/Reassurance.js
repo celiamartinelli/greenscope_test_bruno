@@ -13,14 +13,12 @@ const links = [
 ];
 
 export default function Reassurance() {
-  const repeatedLinks = [...links];
-
   return (
     <section className="reassurance">
       <div className="carousel">
-        <div className="carousel__track">
-          {repeatedLinks.map((link, index) => (
-            <div className="carousel__item" key={index}>
+        <div className="carousel-track">
+          {links.map((link, index) => (
+            <div className="carousel-item" key={index}>
               <Link href={link.href}>
                 <Image src={link.src} alt={link.alt} width={100} height={100} />
               </Link>

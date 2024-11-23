@@ -18,6 +18,14 @@
   justify-content: space-between;
 }
 
+.hero-video {
+  width: 592px;
+  height: 440px;
+  border-radius: 8px;
+  object-fit: cover;
+  object-position: center;
+}
+
 .hero-photo {
   border-radius: 8px;
 }

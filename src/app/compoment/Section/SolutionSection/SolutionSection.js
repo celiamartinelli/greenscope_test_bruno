@@ -27,7 +27,6 @@ const data = [
     imgSrc: "/assets/solutions/group-carbon.svg",
     className: "solution-navbar-cta-assessment",
     colorBtn: "light-green",
-
     bgGraphik: "white",
   },
   {
@@ -40,7 +39,6 @@ const data = [
     imgSrc: "/assets/solutions/group-crd.svg",
     className: "solution-navbar-cta-csrd",
     colorBtn: "dark-green",
-
     bgGraphik: "black",
   },
   {
@@ -65,10 +63,19 @@ const data = [
 
 export default function SolutionSection() {
   const [currentSection, setCurrentSection] = useState(1);
+  const [isAnimating, setIsAnimating] = useState(false);
 
   const handleSectionChange = (id) => {
-    setCurrentSection(id);
+    setIsAnimating(true);
+    setTimeout(() => {
+      setCurrentSection(id);
+      setIsAnimating(false);
+    }, 500); // Durée de l'animation
   };
+
+  // const handleSectionChange = (id) => {
+  //   setCurrentSection(id);
+  // };
 
   const currentData = data.find((item) => item.id === currentSection);
 

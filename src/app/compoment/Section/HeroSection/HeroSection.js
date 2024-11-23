@@ -8,12 +8,16 @@ export default function Hero() {
     <section className="hero">
       <div>
         <div className="hero-container-photo">
-          <Image
-            className="hero-photo"
-            src="/assets/hero/Stocksy.png"
-            alt="Stocksy"
-            width={592}
+          <video
+            className="hero-video"
+            src="/assets/hero/video.mp4"
+            alt="clip-video"
+            width={784}
             height={440}
+            controls
+            autoPlay
+            loop
+            muted
           />
           <Image
             className="hero-photo"
