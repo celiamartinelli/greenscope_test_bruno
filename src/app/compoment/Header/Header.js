@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import "./Header.css";
 import ButtonCtaOutline from "../Button/ButtonCtaOutline";
@@ -9,7 +10,7 @@ export default function Header() {
         <div className="header-logo-primary">
           <Image
             className="logo-primary"
-            src="/logo.svg"
+            src="logo/logo.svg"
             alt="logo"
             width={200}
             height={10}
@@ -23,7 +24,7 @@ export default function Header() {
                   Solutions
                 </a>
                 <Image
-                  src="/arrow-down.svg"
+                  src="arrow/arrow-down.svg"
                   alt="arrow-down"
                   width={10}
                   height={10}
@@ -34,7 +35,7 @@ export default function Header() {
                   Platform
                 </a>
                 <Image
-                  src="/arrow-down.svg"
+                  src="arrow/arrow-down.svg"
                   alt="arrow-down"
                   width={10}
                   height={10}

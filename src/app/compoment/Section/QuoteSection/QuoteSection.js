@@ -5,7 +5,7 @@ import "./QuoteSection.css";
 
 const data = [
   {
-    imgLogo: "/logo-graphik-light-green.svg",
+    imgLogo: "logo/logo-graphik-light-green.svg",
     img: "/assets/quote/person1.png",
     description: "Benjamin - Manager",
     text: `"La plateforme Greenscope 
@@ -15,7 +15,7 @@ nous a permis de mener une campagne de collecte efficace auprès de l’ensemble
     classNameFooterSubtitle: "quote-article-footer-subtitle-dark-green",
   },
   {
-    imgLogo: "/logo-graphik.svg",
+    imgLogo: "logo/logo-graphik-dark-green.svg",
     img: "/assets/quote/person2.png",
     description: "Romain - Manager RH",
     text: `"Greenscope nous a permis de mettre en place un nouveau processus de collecte et d\'analyse des données ESG. Ce processus est plus efficace et plus fiable. 
@@ -25,7 +25,7 @@ nous a permis de mener une campagne de collecte efficace auprès de l’ensemble
     classNameFooterSubtitle: "quote-article-footer-subtitle-light-green",
   },
   {
-    imgLogo: "/logo-graphik-light-green.svg",
+    imgLogo: "logo/logo-graphik-light-green.svg",
     img: "/assets/quote/person5.png",
     description: "Philippe - Chef projet ESG",
     text: `"La plateforme Greenscope 
@@ -35,7 +35,7 @@ nous a permis de mener une campagne de collecte efficace auprès de l’ensemble
     classNameFooterSubtitle: "quote-article-footer-subtitle-dark-green",
   },
   {
-    imgLogo: "/logo-graphik.svg",
+    imgLogo: "logo/logo-graphik-dark-green.svg",
     img: "/assets/quote/person3.png",
     description: "Cassandra - Cheffe projet ESG",
     text: `"Greenscope nous a permis de mettre en place un nouveau processus de collecte et d\'analyse des données ESG. Ce processus est plus efficace et plus fiable. 
@@ -45,7 +45,7 @@ nous a permis de mener une campagne de collecte efficace auprès de l’ensemble
     classNameFooterSubtitle: "quote-article-footer-subtitle-light-green",
   },
   {
-    imgLogo: "/logo-graphik-light-green.svg",
+    imgLogo: "logo/logo-graphik-light-green.svg",
     img: "/assets/quote/person4.png",
     description: "Rémy - Manager RH",
     text: `"La plateforme Greenscope 
@@ -55,7 +55,7 @@ nous a permis de mener une campagne de collecte efficace auprès de l’ensemble
     classNameFooterSubtitle: "quote-article-footer-subtitle-dark-green",
   },
   {
-    imgLogo: "/logo-graphik.svg",
+    imgLogo: "logo/logo-graphik-dark-green.svg",
     img: "/assets/quote/person2.png",
     description: "Romain - Manager RH",
     text: `"Greenscope nous a permis de mettre en place un nouveau processus de collecte et d\'analyse des données ESG. Ce processus est plus efficace et plus fiable. 
@@ -65,7 +65,7 @@ nous a permis de mener une campagne de collecte efficace auprès de l’ensemble
     classNameFooterSubtitle: "quote-article-footer-subtitle-light-green",
   },
   {
-    imgLogo: "/logo-graphik-light-green.svg",
+    imgLogo: "logo/logo-graphik-light-green.svg",
     img: "/assets/quote/person1.png",
     description: "Benjamin - Manager",
     text: `"La plateforme Greenscope 
@@ -160,7 +160,7 @@ export default function QuoteSection() {
             }
           >
             <Image
-              src="/arrow-left-dark-green.svg"
+              src="arrow/arrow-left-dark-green.svg"
               alt="arrow-left-dark-green"
               width={11.2}
               height={8}
@@ -176,7 +176,7 @@ export default function QuoteSection() {
             }
           >
             <Image
-              src="/arrow-right-green.svg"
+              src="arrow/arrow-right-green.svg"
               alt="arrow-right-green"
               width={11.2}
               height={8}

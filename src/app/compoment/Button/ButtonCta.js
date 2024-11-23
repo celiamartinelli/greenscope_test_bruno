@@ -6,7 +6,7 @@ export default function ButtonCta() {
     <button type="cta" className="buttonCta">
       Get a Demo
       <Image
-        src="/arrow-right-purple.svg"
+        src="arrow/arrow-right-purple.svg"
         alt="arrow-rigth-purple"
         width={16}
         height={16}

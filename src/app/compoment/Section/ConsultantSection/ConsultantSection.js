@@ -21,7 +21,7 @@ export default function ConsultantSection() {
         <div className="consultant-caroussel">
           <button className="consultant-button" onClick={handlePrev}>
             <Image
-              src="/arrow-left.svg"
+              src="arrow/arrow-left.svg"
               alt="arrow-left"
               width={11.2}
               height={8}
@@ -29,7 +29,7 @@ export default function ConsultantSection() {
           </button>
           <button className="consultant-button" onClick={handleNext}>
             <Image
-              src="/arrow-right.svg"
+              src="arrow/arrow-right.svg"
               alt="arrow-right"
               width={11.2}
               height={8}
@@ -63,7 +63,7 @@ export default function ConsultantSection() {
           <div className="consultant-block">
             <div className="consultant-header">
               <Image
-                src="/logo-graphik-light-green.svg"
+                src="logo/logo-graphik-light-green.svg"
                 alt="logo"
                 width={32}
                 height={32}
@@ -97,7 +97,7 @@ export default function ConsultantSection() {
             <div className="consultant-header">
               <Image
                 className="consultant-header-logo"
-                src="/logo-graphik-light-green.svg"
+                src="logo/logo-graphik-light-green.svg"
                 alt="logo"
                 width={32}
                 height={32}

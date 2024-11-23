@@ -14,6 +14,7 @@ const data = [
     imgSrc: "/assets/solutions/group-esg.svg",
     className: "solution-navbar-cta-solution",
     colorBtn: "dark-purple",
+    bgGraphik: "black",
   },
   {
     id: 2,
@@ -25,6 +26,7 @@ const data = [
     imgSrc: "/assets/solutions/group-carbon.svg",
     className: "solution-navbar-cta-assessment",
     colorBtn: "light-green",
+    bgGraphik: "white",
   },
   {
     id: 3,
@@ -36,6 +38,7 @@ const data = [
     imgSrc: "/assets/solutions/group-crd.svg",
     className: "solution-navbar-cta-csrd",
     colorBtn: "dark-green",
+    bgGraphik: "black",
   },
   {
     id: 4,
@@ -52,6 +55,7 @@ const data = [
     imgSrc: "/assets/solutions/group-impact.svg",
     className: "solution-navbar-cta-impact",
     colorBtn: "white",
+    bgGraphik: "white",
   },
 ];
 
@@ -106,12 +110,12 @@ export default function SolutionSection() {
                   </h3>
                   <div className="section-left-container-tag">
                     {item.tags.map((keyword, index) => (
-                      <tag
+                      <span
                         className={`section-left-tag tag-${currentData.name} `}
                         key={index}
                       >
                         {keyword}
-                      </tag>
+                      </span>
                     ))}
                   </div>
                 </div>
@@ -120,7 +124,9 @@ export default function SolutionSection() {
               </div>
 
               <div className="section-right">
-                <div className="section-graphik-container">
+                <div
+                  className={`section-graphik-container bg-${item.bgGraphik}`}
+                >
                   <Image
                     className="section-graphik-logo"
                     src={`/logo/logo-graphik-${item.colorBtn}.svg`}
@@ -128,20 +134,27 @@ export default function SolutionSection() {
                     width={32}
                     height={32}
                   />
+                  <Image
+                    className="section-graphik-thumbnail"
+                    src={`assets/solutions/thumbnail-${item.name}.svg`}
+                    alt={`thumnail-${item.name}`}
+                    width={137}
+                    height={68}
+                  />
                   <div className="section-graphik-block">
                     <Image
                       className="section-graphik-image"
                       src="/assets/solutions/graphik.svg"
                       alt="graphik"
-                      width={817}
-                      height={256}
+                      width={493}
+                      height={264}
                     />
                   </div>
                 </div>
                 <button className="solution-btn" type="cta">
                   Learn more
                   <Image
-                    src={`/arrow-right-${item.colorBtn}.svg`}
+                    src={`arrow/arrow-right-${item.colorBtn}.svg`}
                     alt={`arrow-right-${item.colorBtn}`}
                     width={16}
                     height={16}

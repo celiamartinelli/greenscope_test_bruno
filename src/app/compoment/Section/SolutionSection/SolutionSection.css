@@ -37,7 +37,6 @@
 
 .solution-navbar-cta {
   border-radius: 100px;
-  /* background-color: lightcoral; */
 }
 
 .solution-navbar-cta-solution {
@@ -162,9 +161,15 @@
   position: relative;
   width: 492px;
   height: 380px;
-  background-color: rgba(255, 255, 255, 0.2);
   border-radius: 8px;
   overflow: hidden;
+}
+
+.bg-white {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.bg-black {
+  background-color: rgba(69, 56, 72, 0.1);
 }
 
 .section-graphik-logo {
@@ -181,11 +186,26 @@
   height: 287.76px;
   top: 48px;
   left: 81px;
-  background-color: lightcoral;
+  background-color: rgba(255, 255, 255);
   border-radius: 8px;
 }
 
 .section-graphik-image {
+  position: absolute;
+  width: 493px;
+  height: 264px;
+  top: 12.28px;
+  left: -35px;
+}
+
+.section-graphik-thumbnail {
+  position: absolute;
+  width: 136.44px;
+  height: 67.25px;
+  top: 193.24px;
+  left: 155.41px;
+
+  z-index: 100;
 }
 
 .bg-solution {

@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import "./Footer.css";
 import Link from "next/link";
@@ -45,7 +46,7 @@ export default function Footer() {
       <div className="footer-logo-primary">
         <Image
           className="logo-primary"
-          src="/logo.svg"
+          src="logo/logo.svg"
           alt="logo"
           width={332}
           height={32}

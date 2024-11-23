@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import "./HeroSection.css";
 import ButtonCta from "../../Button/ButtonCta";
@@ -30,7 +31,7 @@ export default function Hero() {
           </h1>
           <Image
             className="hero-logo-graphik"
-            src="/logo-graphik-dark-green.svg"
+            src="logo/logo-graphik-dark-green.svg"
             alt="logo-graphik"
             width={64}
             height={64}

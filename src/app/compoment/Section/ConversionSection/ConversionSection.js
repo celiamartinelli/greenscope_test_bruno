@@ -1,3 +1,4 @@
+"use client";
 import "./ConversionSection.css";
 import ButtonCta from "../../Button/ButtonCta";
 
