@@ -20,7 +20,7 @@ nous a permis de mener une campagne de collecte efficace auprès de l’ensemble
     description: "Romain - Manager RH",
     text: `"Greenscope nous a permis de mettre en place un nouveau processus de collecte et d\'analyse des données ESG. Ce processus est plus efficace et plus fiable. 
     Nous sommes très satisfaits de l'outil et apprécions le soutien des experts de Greenscope."`,
-    className: "quote-article-light-green",
+    className: "quote-article-medium-green",
     classNameFooter: "quote-article-footer-light-green",
     classNameFooterSubtitle: "quote-article-footer-subtitle-light-green",
   },
@@ -45,39 +45,41 @@ nous a permis de mener une campagne de collecte efficace auprès de l’ensemble
     classNameFooterSubtitle: "quote-article-footer-subtitle-light-green",
   },
   {
-    imgLogo: "logo/logo-graphik-light-green.svg",
+    imgLogo: "logo/logo-graphik-dark-green.svg",
     img: "/assets/quote/person4.png",
     description: "Rémy - Manager RH",
     text: `"La plateforme Greenscope 
     nous a permis de mener une campagne de collecte efficace auprès de l’ensemble de nos participations, avec le soutien d’une équipe réactive et de qualité. La plateforme est intuitive, et les questionnaires sont fluides.”`,
+    className: "quote-article-medium-green",
+    classNameFooter: "quote-article-footer-light-green",
+    classNameFooterSubtitle: "quote-article-footer-subtitle-light-green",
+  },
+  {
+    imgLogo: "logo/logo-graphik-light-green.svg",
+    img: "/assets/quote/person2.png",
+    description: "Romain - Manager RH",
+    text: `"Greenscope nous a permis de mettre en place un nouveau processus de collecte et d\'analyse des données ESG. Ce processus est plus efficace et plus fiable. 
+    Nous sommes très satisfaits de l'outil et apprécions le soutien des experts de Greenscope."`,
     className: "quote-article-dark-green",
     classNameFooter: "quote-article-footer-dark-green",
     classNameFooterSubtitle: "quote-article-footer-subtitle-dark-green",
   },
   {
     imgLogo: "logo/logo-graphik-dark-green.svg",
-    img: "/assets/quote/person2.png",
-    description: "Romain - Manager RH",
-    text: `"Greenscope nous a permis de mettre en place un nouveau processus de collecte et d\'analyse des données ESG. Ce processus est plus efficace et plus fiable. 
-    Nous sommes très satisfaits de l'outil et apprécions le soutien des experts de Greenscope."`,
-    className: "quote-article-light-green",
-    classNameFooter: "quote-article-footer-light-green",
-    classNameFooterSubtitle: "quote-article-footer-subtitle-light-green",
-  },
-  {
-    imgLogo: "logo/logo-graphik-light-green.svg",
     img: "/assets/quote/person1.png",
     description: "Benjamin - Manager",
     text: `"La plateforme Greenscope 
 nous a permis de mener une campagne de collecte efficace auprès de l’ensemble de nos participations, avec le soutien d’une équipe réactive et de qualité. La plateforme est intuitive, et les questionnaires sont fluides.”`,
-    className: "quote-article-dark-green",
-    classNameFooter: "quote-article-footer-dark-green",
-    classNameFooterSubtitle: "quote-article-footer-subtitle-dark-green",
+    className: "quote-article-light-green",
+    classNameFooter: "quote-article-footer-light-green",
+    classNameFooterSubtitle: "quote-article-footer-subtitle-light-green",
   },
 ];
 
 export default function QuoteSection() {
   const [currentSelection, setCurrentSelection] = useState(2);
+  const [isHoveredPrev, setIsHoveredPrev] = useState(false);
+  const [isHoveredNext, setIsHoveredNext] = useState(false);
 
   const handleClick = (index) => {
     setCurrentSelection(index);
@@ -98,12 +100,7 @@ export default function QuoteSection() {
         }}
       >
         {data.map((item, index) => (
-          <div
-            key={index}
-            className={`item-container ${
-              index === currentSelection ? "selected" : ""
-            }`}
-          >
+          <div key={index} className="item-container">
             {index === currentSelection ? (
               <article className={item.className}>
                 <Image
@@ -158,9 +155,15 @@ export default function QuoteSection() {
                 prevIndex === 0 ? data.length - 1 : prevIndex - 1
               )
             }
+            onMouseEnter={() => setIsHoveredPrev(true)}
+            onMouseLeave={() => setIsHoveredPrev(false)}
           >
             <Image
-              src="arrow/arrow-left-dark-green.svg"
+              src={
+                isHoveredPrev
+                  ? "arrow/arrow-left.svg"
+                  : "arrow/arrow-left-dark-green.svg"
+              }
               alt="arrow-left-dark-green"
               width={11.2}
               height={8}
@@ -174,9 +177,15 @@ export default function QuoteSection() {
                 prevIndex === data.length - 1 ? 0 : prevIndex + 1
               )
             }
+            onMouseEnter={() => setIsHoveredNext(true)}
+            onMouseLeave={() => setIsHoveredNext(false)}
           >
             <Image
-              src="arrow/arrow-right-green.svg"
+              src={
+                isHoveredNext
+                  ? "arrow/arrow-right.svg"
+                  : "arrow/arrow-right-green.svg"
+              }
               alt="arrow-right-green"
               width={11.2}
               height={8}

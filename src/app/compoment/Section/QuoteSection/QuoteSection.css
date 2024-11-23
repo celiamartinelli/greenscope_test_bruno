@@ -1,27 +1,9 @@
 .quote {
   height: 880px;
-  /* background-color: lightsalmon; */
   color: var(--primary-dark-green);
   position: relative;
   border: solid 1px rgba(0, 51, 0, 0.2);
   overflow: hidden;
-}
-
-.quote-item {
-  position: absolute;
-  opacity: 0;
-  transform: scale(0.9);
-  transition: opacity 0.3s ease, transform 0.3s ease;
-}
-
-.quote-item.active {
-  opacity: 1;
-  transform: scale(1);
-  z-index: 1;
-}
-
-.quote-item.hidden {
-  z-index: 0;
 }
 
 .quote-title {
@@ -38,7 +20,6 @@
 }
 
 .quote-section {
-  /* background-color: lightcoral; */
   position: absolute;
   top: 240px;
   left: -46px;
@@ -60,7 +41,6 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  /* background-color: lightcoral; */
 }
 
 .quote-button {
@@ -73,6 +53,10 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
+}
+.quote-button:hover {
+  background-color: var(--primary-dark-green);
+  transition: ease-in-out 0.3s;
 }
 
 .quote-article-dark-green {
@@ -92,6 +76,18 @@
   flex-direction: column;
   justify-content: space-between;
   background-color: var(--primary-light-green);
+  width: 292px;
+  height: 388px;
+  border-radius: 8px;
+  color: var(--primary-dark-green);
+  position: relative;
+}
+
+.quote-article-medium-green {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--primary-medium-green);
   width: 292px;
   height: 388px;
   border-radius: 8px;
@@ -183,10 +179,6 @@
   text-align: left;
   color: rgba(60, 74, 65, 0.7);
 }
-
-/* .quote-person {
-  border-radius: 8px;
-} */
 
 .quote-text {
   position: absolute;

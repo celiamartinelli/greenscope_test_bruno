@@ -5,6 +5,8 @@ import "./ConsultantSection.css";
 
 export default function ConsultantSection() {
   const [currentSection, setCurrentSection] = useState(1);
+  const [isHoveredPrev, setIsHoveredPrev] = useState(false);
+  const [isHoveredNext, setIsHoveredNext] = useState(false);
 
   const handleNext = () => {
     setCurrentSection((prevSection) => (prevSection === 1 ? 2 : 1));
@@ -19,17 +21,35 @@ export default function ConsultantSection() {
       <div className="consultant-container">
         <h2 className="consultant-title">A solution for everyone</h2>
         <div className="consultant-caroussel">
-          <button className="consultant-button" onClick={handlePrev}>
+          <button
+            className="consultant-button"
+            onClick={handlePrev}
+            onMouseEnter={() => setIsHoveredPrev(true)}
+            onMouseLeave={() => setIsHoveredPrev(false)}
+          >
             <Image
-              src="arrow/arrow-left.svg"
+              src={
+                isHoveredPrev
+                  ? "arrow/arrow-left-dark-green.svg"
+                  : "arrow/arrow-left.svg"
+              }
               alt="arrow-left"
               width={11.2}
               height={8}
             />
           </button>
-          <button className="consultant-button" onClick={handleNext}>
+          <button
+            className="consultant-button"
+            onClick={handleNext}
+            onMouseEnter={() => setIsHoveredNext(true)}
+            onMouseLeave={() => setIsHoveredNext(false)}
+          >
             <Image
-              src="arrow/arrow-right.svg"
+              src={
+                isHoveredNext
+                  ? "arrow/arrow-right-green.svg"
+                  : "arrow/arrow-right.svg"
+              }
               alt="arrow-right"
               width={11.2}
               height={8}

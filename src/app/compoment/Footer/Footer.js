@@ -45,7 +45,7 @@ export default function Footer() {
     <footer className="footer-container">
       <div className="footer-logo-primary">
         <Image
-          className="logo-primary"
+          className="logo-primary-footer"
           src="logo/logo.svg"
           alt="logo"
           width={332}

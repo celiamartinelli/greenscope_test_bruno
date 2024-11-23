@@ -10,22 +10,20 @@
   width: 322px;
   height: 32px;
   top: 120px;
-  left: 76px;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
+  left: 90px;
 }
 
-.logo-primary {
-  width: 275.21px;
-  height: 29.42px;
+.logo-primary-footer {
+  width: 332px;
+  height: 32px;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .footer-logo-reward {
   position: absolute;
   top: 223px;
   left: 124px;
-  padding: 4px 0px 0px 0px;
 }
 
 .footer-links {

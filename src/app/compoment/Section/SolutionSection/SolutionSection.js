@@ -14,6 +14,7 @@ const data = [
     imgSrc: "/assets/solutions/group-esg.svg",
     className: "solution-navbar-cta-solution",
     colorBtn: "dark-purple",
+    classNameUnderliner: "underline-learn-dark-purple",
     bgGraphik: "black",
   },
   {
@@ -26,6 +27,7 @@ const data = [
     imgSrc: "/assets/solutions/group-carbon.svg",
     className: "solution-navbar-cta-assessment",
     colorBtn: "light-green",
+
     bgGraphik: "white",
   },
   {
@@ -38,6 +40,7 @@ const data = [
     imgSrc: "/assets/solutions/group-crd.svg",
     className: "solution-navbar-cta-csrd",
     colorBtn: "dark-green",
+
     bgGraphik: "black",
   },
   {
@@ -55,6 +58,7 @@ const data = [
     imgSrc: "/assets/solutions/group-impact.svg",
     className: "solution-navbar-cta-impact",
     colorBtn: "white",
+
     bgGraphik: "white",
   },
 ];
@@ -151,15 +155,20 @@ export default function SolutionSection() {
                     />
                   </div>
                 </div>
-                <button className="solution-btn" type="cta">
-                  Learn more
+                <div className="solution-btn-container">
+                  <button
+                    className={`solution-btn underline-learn-${item.bgGraphik}`}
+                    type="cta"
+                  >
+                    Learn more
+                  </button>
                   <Image
                     src={`arrow/arrow-right-${item.colorBtn}.svg`}
                     alt={`arrow-right-${item.colorBtn}`}
                     width={16}
                     height={16}
                   />
-                </button>
+                </div>
               </div>
             </div>
           ))}
