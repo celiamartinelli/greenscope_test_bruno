@@ -164,7 +164,7 @@ export default function SolutionSection() {
                 </div>
                 <div className="solution-btn-container">
                   <button
-                    className={`solution-btn underline-learn-${item.bgGraphik}`}
+                    className={`underline-learn-${item.bgGraphik}`}
                     type="cta"
                   >
                     Learn more

@@ -15,22 +15,22 @@ export default function ConsultantSection() {
             width={48}
             height={48}
           />
-
-          <button className="consultantbis-section-data-button" type="cta">
-            Learn more
+          <div className="consultantbis-section-data-button">
+            <button className="consultantbis-underline-learn-black" type="cta">
+              Learn more
+            </button>
             <Image
               src="assets/consultantsbis/arrow-right-dark-green.svg"
               alt="arrow-right-solid"
               width={16}
               height={16}
             />
-          </button>
-
+          </div>
           <h3 className="consultantbis-section-data-title">Data integration</h3>
           <div className="consultantbis-section-data-text">
             <p>
               Lorem ipsum dolor sit amet consectetur. Sagittis sed congue semper
-              sapien pulvinar. Tellus fames velit leo vel
+              sapien pulvinar. Tellus fames velit leo vel.
             </p>
           </div>
         </section>
@@ -42,22 +42,22 @@ export default function ConsultantSection() {
             width={48}
             height={48}
           />
-
-          <button className="consultantbis-section-security-button" type="cta">
-            Learn more
+          <div className="consultantbis-section-data-button">
+            <button className="consultantbis-underline-learn-white" type="cta">
+              Learn more
+            </button>
             <Image
               src="assets/consultantsbis/arrow-right-white.svg"
               alt="arrow-right-white"
               width={16}
               height={16}
             />
-          </button>
-
+          </div>
           <h3 className="consultantbis-section-security-title">Security</h3>
           <div className="consultantbis-section-security-text">
             <p>
               Lorem ipsum dolor sit amet consectetur. Sagittis sed congue semper
-              sapien pulvinar. Tellus fames velit leo vel
+              sapien pulvinar. Tellus fames velit leo vel.
             </p>
           </div>
         </section>
