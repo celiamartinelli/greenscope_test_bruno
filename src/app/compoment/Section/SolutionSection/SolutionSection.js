@@ -11,7 +11,6 @@ const data = [
     tags: ["Mot clé associé", "Mot clé associé"],
     description:
       "Automatically collect data, launch campaigns, establish quality processes, and build an organization that mirrors your own, all within our platform. Benchmark best practices, set scoring rules, and track performance with custom dashboards.",
-    imgSrc: "/assets/solutions/group-esg.svg",
     className: "solution-navbar-cta-solution",
     colorBtn: "dark-purple",
     classNameUnderliner: "underline-learn-dark-purple",
@@ -24,7 +23,6 @@ const data = [
     tags: ["Mot clé associé", "Mot clé associé"],
     description:
       "Choose a Carbon module from our options, estimate emissions across Scopes 1, 2, and 3, generate footprint reports, receive recommendations, and build your decarbonization strategy.",
-    imgSrc: "/assets/solutions/group-carbon.svg",
     className: "solution-navbar-cta-assessment",
     colorBtn: "light-green",
     bgGraphik: "white",
@@ -36,9 +34,8 @@ const data = [
     tags: ["Mot clé associé", "Mot clé associé"],
     description:
       "Leverage our expertise and tools to demystify CSRD and unlock opportunities. Conduct your double materiality assessments, perform gap analyses, collect data, and prepare audit-ready reports.",
-    imgSrc: "/assets/solutions/group-crd.svg",
     className: "solution-navbar-cta-csrd",
-    colorBtn: "dark-green",
+    colorBtn: "dark-purple",
     bgGraphik: "black",
   },
   {
@@ -53,10 +50,8 @@ const data = [
     tags: ["Mot clé associé", "Mot clé associé"],
     description:
       "Analyze your biodiversity impact and dependencies, achieve Taxonomy alignment, conduct SFDR and PAI analysis, and stay updated on regulatory news",
-    imgSrc: "/assets/solutions/group-impact.svg",
     className: "solution-navbar-cta-impact",
     colorBtn: "white",
-
     bgGraphik: "white",
   },
 ];
@@ -148,7 +143,6 @@ export default function SolutionSection() {
                     alt={`thumnail-${item.name}`}
                     width={137}
                     height={68}
-                    style={{ width: "auto", height: "auto" }}
                   />
                   <div className="section-graphik-block">
                     <Image
