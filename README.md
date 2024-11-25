@@ -25,7 +25,7 @@ Initialement, je souhaitais utiliser CSS Grid, car les grilles étaient disponib
 
 1. Clonez ce dépôt sur votre machine :
    ```bash
-   git clone <url_du_dépôt>
+   git clone git@github.com:celiamartinelli/greenscope_test_bruno.git
    ```
 2. Installez les dépendances :
 
