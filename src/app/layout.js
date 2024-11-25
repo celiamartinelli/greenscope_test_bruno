@@ -32,7 +32,7 @@ const neueMontreal = localFont({
 
 export const metadata = {
   title: "Greenscope",
-  description: "GGreenscope web app pixel perfect",
+  description: "Greenscope web app pixel perfect",
 };
 
 export default function RootLayout({ children }) {
