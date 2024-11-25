@@ -1,3 +1,6 @@
+/* ================================
+   Conteneur Principal de la Section
+   ================================ */
 .reassurance {
   display: flex;
   justify-content: center;
@@ -7,6 +10,9 @@
   height: 180px;
 }
 
+/* ================================
+     Carousel (Piste défilante)
+     ================================ */
 .carousel {
   position: relative;
   width: 100%;
@@ -25,6 +31,9 @@
   margin-right: 20px;
 }
 
+/* ================================
+     Animation : Scroll Continu
+     ================================ */
 @keyframes scroll {
   0% {
     transform: translateX(0);

@@ -1,3 +1,6 @@
+/* ============================
+   Conteneur Principal du Footer
+   ============================ */
 .footer-container {
   color: var(--primary-dark-green);
   height: 532px;
@@ -5,6 +8,11 @@
   position: relative;
 }
 
+/* ========================
+     Logos du Footer
+     ======================== */
+
+/* Logo principal */
 .footer-logo-primary {
   position: absolute;
   width: 322px;
@@ -13,6 +21,7 @@
   left: 90px;
 }
 
+/* Conteneur du logo (structure) */
 .logo-primary-footer {
   width: 332px;
   height: 32px;
@@ -20,17 +29,24 @@
   justify-content: flex-end;
 }
 
+/* Logo secondaire (ex. récompenses ou certifications) */
 .footer-logo-reward {
   position: absolute;
   top: 223px;
   left: 124px;
 }
 
+/* ============================
+     Liens dans le Footer
+     ============================ */
+
+/* Conteneur général des sections de liens */
 .footer-links {
   position: relative;
   display: flex;
 }
 
+/* Section 1 des liens */
 .links-section1 {
   position: absolute;
   left: 624px;
@@ -39,6 +55,7 @@
   height: 161px;
 }
 
+/* Section 2 des liens */
 .links-section2 {
   position: absolute;
   left: 874px;
@@ -47,6 +64,7 @@
   height: 209px;
 }
 
+/* Section 3 des liens */
 .links-section3 {
   position: absolute;
   left: 1124px;
@@ -55,24 +73,27 @@
   height: 161px;
 }
 
+/* Style des titres des sections */
 .link-title {
   opacity: 60%;
-  font-family: Inter;
+  font-family: Inter, sans-serif;
   font-size: 14px;
   font-weight: 500;
   line-height: 19.6px;
   height: 45px;
 }
 
+/* Conteneur des sous-liens */
 .link-container {
   display: flex;
   flex-direction: column;
   gap: 4px;
 }
 
+/* Style des sous-liens */
 .link-subtitle {
   height: 29px;
-  font-family: Inter;
+  font-family: Inter, sans-serif;
   font-size: 14px;
   font-weight: 500;
   line-height: 19.6px;
@@ -81,6 +102,11 @@
   text-decoration-skip-ink: none;
 }
 
+/* ========================
+     Footer Inférieur
+     ======================== */
+
+/* Conteneur global (liens légaux et réseaux sociaux) */
 .footer-footer {
   position: relative;
   display: flex;
@@ -88,14 +114,17 @@
   background-color: lightgoldenrodyellow;
 }
 
+/* Liens légaux */
 .footer-legal-term {
   position: absolute;
   top: 480px;
   left: 124px;
   gap: 5px;
 }
+
+/* Style des termes légaux */
 .legal-term {
-  font-family: Inter;
+  font-family: Inter, sans-serif;
   font-size: 12px;
   font-weight: 400;
   line-height: 14.4px;
@@ -105,6 +134,8 @@
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
 }
+
+/* Span pour un contenu spécifique */
 .legal-term-span {
   font-size: 12px;
   font-weight: 400;
@@ -112,13 +143,16 @@
   text-align: left;
   text-decoration: none;
 }
+
+/* Liens de politique de confidentialité */
 .legal-privacy {
-  font-family: Inter;
+  font-family: Inter, sans-serif;
   font-size: 12px;
   margin-right: 5px;
 }
+
 .legal-privacy-span {
-  font-family: Inter;
+  font-family: Inter, sans-serif;
   font-size: 12px;
   font-weight: 400;
   line-height: 14.4px;
@@ -127,10 +161,16 @@
   margin-left: 5px;
 }
 
+/* ========================
+     Réseaux Sociaux
+     ======================== */
+
+/* Conteneur des icônes sociales */
 .footer-social {
   position: relative;
 }
 
+/* Réseaux sociaux (conteneur) */
 .social-media {
   position: absolute;
   top: 466px;
@@ -142,16 +182,22 @@
   gap: 8px;
 }
 
+/* Style des liens des icônes sociales */
 .social-media-link {
   width: 36px;
   height: 36px;
 }
 
+/* ========================
+     Copyright
+     ======================== */
+
+/* Section du texte de copyright */
 .footer-copyright {
   position: absolute;
   top: 478px;
   left: 1084px;
-  font-family: Inter;
+  font-family: Inter, sans-serif;
   font-size: 11px;
   font-weight: 400;
   line-height: 13.2px;

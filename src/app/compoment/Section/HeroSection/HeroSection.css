@@ -1,3 +1,6 @@
+/* ============================
+   Conteneur Principal de la Hero
+   ============================ */
 .hero {
   color: var(--primary-dark-green);
   height: 789px;
@@ -8,6 +11,9 @@
   align-items: center;
 }
 
+/* ========================
+     Conteneur des Médias (Photo & Vidéo)
+     ======================== */
 .hero-container-photo {
   position: absolute;
   width: 1192px;
@@ -18,6 +24,7 @@
   justify-content: space-between;
 }
 
+/* Vidéo dans la Hero */
 .hero-video {
   width: 592px;
   height: 440px;
@@ -26,17 +33,23 @@
   object-position: center;
 }
 
+/* Photo dans la Hero */
 .hero-photo {
   border-radius: 8px;
 }
 
+/* ========================
+     Texte et Titres
+     ======================== */
+
+/* Titre principal */
 .hero-title {
   position: absolute;
   width: 358px;
-  letter-spacing: -2px;
   height: 124px;
   top: 553px;
   left: 124px;
+  letter-spacing: -2px;
   font-family: var(--font-neue-montreal);
   font-size: 48px;
   font-weight: 500;
@@ -44,6 +57,11 @@
   text-align: left;
 }
 
+/* ========================
+     Logos et Graphiques
+     ======================== */
+
+/* Logo graphique (ex. icône ou illustration) */
 .hero-logo-graphik {
   position: absolute;
   width: 64px;
@@ -52,6 +70,11 @@
   left: 688px;
 }
 
+/* ========================
+     Liens et Appels à l'Action
+     ======================== */
+
+/* Lien de navigation ou sous-titre */
 .hero-link {
   position: absolute;
   width: 255px;
@@ -60,10 +83,11 @@
   left: 896px;
 }
 
+/* Bouton CTA (Call To Action) */
 .hero-cta {
   position: absolute;
-  width: Hug (137px) px;
-  height: Fixed (50px) px;
+  width: 137px;
+  height: 50px;
   top: 613px;
   left: 878px;
 }

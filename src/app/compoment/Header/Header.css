@@ -1,98 +1,118 @@
+/* ============ HEADER STYLES ============ */
+
+/* Style principal du header */
 .header {
   height: 88px;
-  position: sticky;
+  position: sticky; /* Permet au header de rester en haut lors du scroll */
   top: 0;
   z-index: 1000;
   background-color: white;
 }
 
+/* Conteneur principal */
 .header-container {
   position: relative;
   width: 1191.7px;
   height: 40px;
-  top: 24px;
-  left: 124px;
+  margin: 24px auto 0; /* Centré horizontalement */
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
 
+/* ============ LOGO ============ */
+
+/* Conteneur du logo */
 .header-logo-primary {
   position: absolute;
-  width: 250px;
-  height: 25.37px;
-  top: 7.02px;
-  left: -45px;
   display: flex;
   justify-content: flex-end;
+  top: 7.02px;
+  left: -45px;
+  width: 250px;
+  height: 25.37px;
 }
 
+/* Dimensions spécifiques au logo */
 .logo-primary-header {
   width: 213.67px;
   height: 23.33px;
 }
 
+/* ============ NAVBAR ============ */
+
+/* Conteneur de la barre de navigation */
 .navbar-container {
   position: absolute;
-  width: 317.74px;
-  height: 20px;
   top: 10px;
   left: 344.61px;
-  gap: 24px;
+  display: flex;
+  gap: 24px; /* Espacement entre les éléments */
   color: rgba(60, 74, 65, 0.7);
 }
 
+/* Liste des liens dans la navbar */
 .navbar-links {
   display: flex;
-  flex-direction: row;
   gap: 24px;
 }
 
+/* Styles pour les liens avec icônes */
 .link-with-icone {
-  width: 74.52px;
-  height: 20px;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   align-items: center;
   gap: 8px;
+  height: 20px;
+  width: auto; /* Ajuste automatiquement en fonction du contenu */
 }
 
+/* Styles pour les liens sans icônes */
+.link-without-icone {
+  position: relative;
+}
+
+/* Style de base pour tous les liens */
 .link-navbar {
   font-family: var(--font-neue-montreal);
   font-size: 14px;
   font-weight: 500;
   line-height: 19.6px;
   text-align: right;
+  color: inherit;
+  text-decoration: none; /* Supprime les soulignements par défaut */
 }
 
-.rotate {
-  transform: rotate(180deg);
-  transition: transform 0.3s ease;
-}
+/* ============ DROPDOWN ============ */
 
+/* Conteneur de la section déroulante */
 .dropdown-section {
-  display: none;
-  justify-content: center;
-  align-items: center;
+  display: none; /* Masqué par défaut */
   position: absolute;
-  top: 100%;
+  top: 100%; /* En dessous du lien */
   left: -120%;
   width: 1240px;
   height: 400px;
   border-radius: 8px;
   background-color: white;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Ajout d'une ombre subtile */
 }
 
+/* Affiche le dropdown lors du hover */
 .link-with-icone:hover .dropdown-section {
   display: flex;
 }
 
-.underline {
-  position: relative;
+/* ============ ANIMATIONS ============ */
+
+/* Animation pour les icônes (rotation) */
+.rotate {
+  transform: rotate(180deg);
+  transition: transform 0.3s ease;
 }
 
+/* Animation pour l'underline */
 .underline::after {
   content: "";
   position: absolute;
@@ -104,6 +124,7 @@
   transition: width 0.2s;
 }
 
+/* Animation au hover pour l'underline */
 .underline:hover::after {
   width: 100%;
 }
