@@ -1,36 +1,48 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# GREENSCOPE
 
-## Getting Started
+Bienvenue dans le projet **GREENSCOPE** ! Ce projet est une reproduction pixel-perfect d'une maquette Figma fournie par la société Bruno. Voici une explication détaillée de ma démarche ainsi que des instructions pour explorer le projet.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🎨 Approche et structure
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 1. **Étude de la maquette**
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+Avant de commencer, j’ai minutieusement analysé la maquette Figma pour comprendre son organisation et les détails de chaque section. J’ai choisi de découper la page en plusieurs composants correspondant aux sections principales, afin de faciliter la gestion et la lecture du code.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 2. **Technologies utilisées**
 
-## Learn More
+- **Framework** : [Next.js](https://nextjs.org/)
+- **Styles** : CSS natif, avec un fichier CSS distinct pour chaque composant, afin d’assurer une meilleure lisibilité et organisation.
 
-To learn more about Next.js, take a look at the following resources:
+### 3. **Mise en page**
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Initialement, je souhaitais utiliser CSS Grid, car les grilles étaient disponibles sur Figma. Cependant, je n'ai pas trouvé les valeurs exactes des grilles sur la maquette. Pour garantir un rendu pixel-perfect, j'ai choisi de positionner les éléments en utilisant `position: relative` et `position: absolute`.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 🚀 Installation et exécution
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. Clonez ce dépôt sur votre machine :
+   ```bash
+   git clone <url_du_dépôt>
+   ```
+2. Installez les dépendances :
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+   ```bash
+   npm install
+   ```
+
+3. Lancez le projet en mode développement :
+
+   ```bash
+   npm run dev
+   ```
+
+## 👀 Aperçu du projet
+
+Le projet est structuré pour offrir une lisibilité maximale, avec une organisation en composants et une gestion CSS optimisée par section. J’espère que vous apprécierez l’exploration du projet autant que j’ai aimé le construire.
+
+## 📩 Message personnel
+
+Merci de m’avoir confié cet exercice, j’ai pris beaucoup de plaisir à travailler sur cette maquette. N’hésitez pas à me faire part de vos retours ou à poser vos questions. Bonne lecture de projet !
