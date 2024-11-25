@@ -14,6 +14,7 @@ export default function ConsultantSection() {
             alt="icon-data"
             width={48}
             height={48}
+            style={{ width: "auto", height: "auto" }}
           />
           <div className="consultantbis-section-data-button">
             <button className="consultantbis-underline-learn-black" type="cta">
@@ -24,6 +25,7 @@ export default function ConsultantSection() {
               alt="arrow-right-solid"
               width={16}
               height={16}
+              style={{ width: "auto", height: "auto" }}
             />
           </div>
           <h3 className="consultantbis-section-data-title">Data integration</h3>
@@ -41,6 +43,7 @@ export default function ConsultantSection() {
             alt="icon-lock"
             width={48}
             height={48}
+            style={{ width: "auto", height: "auto" }}
           />
           <div className="consultantbis-section-data-button">
             <button className="consultantbis-underline-learn-white" type="cta">
@@ -51,6 +54,7 @@ export default function ConsultantSection() {
               alt="arrow-right-white"
               width={16}
               height={16}
+              style={{ width: "auto", height: "auto" }}
             />
           </div>
           <h3 className="consultantbis-section-security-title">Security</h3>

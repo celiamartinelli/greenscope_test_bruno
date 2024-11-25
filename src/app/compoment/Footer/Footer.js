@@ -107,7 +107,13 @@ export default function Footer() {
             {socialMediaLinks.map((link, index) => (
               <li className="social-media-link" key={index}>
                 <Link href={link.href}>
-                  <Image src={link.src} alt={link.alt} width={36} height={36} />
+                  <Image
+                    src={link.src}
+                    alt={link.alt}
+                    width={36}
+                    height={36}
+                    style={{ width: "auto", height: "auto" }}
+                  />
                 </Link>
               </li>
             ))}

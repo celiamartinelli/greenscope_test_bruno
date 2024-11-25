@@ -140,6 +140,7 @@ export default function SolutionSection() {
                     alt={item.title}
                     width={32}
                     height={32}
+                    style={{ width: "auto", height: "auto" }}
                   />
                   <Image
                     className="section-graphik-thumbnail"
@@ -147,6 +148,7 @@ export default function SolutionSection() {
                     alt={`thumnail-${item.name}`}
                     width={137}
                     height={68}
+                    style={{ width: "auto", height: "auto" }}
                   />
                   <div className="section-graphik-block">
                     <Image
@@ -170,6 +172,7 @@ export default function SolutionSection() {
                     alt={`arrow-right-${item.colorBtn}`}
                     width={16}
                     height={16}
+                    style={{ width: "auto", height: "auto" }}
                   />
                 </div>
               </div>

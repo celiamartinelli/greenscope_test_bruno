@@ -87,6 +87,7 @@ export default function ConsultantSection() {
                 alt="logo"
                 width={32}
                 height={32}
+                style={{ width: "auto", height: "auto" }}
               />
               <h3 className="consultant-header-title">For Companies</h3>
             </div>
@@ -121,6 +122,7 @@ export default function ConsultantSection() {
                 alt="logo"
                 width={32}
                 height={32}
+                style={{ width: "auto", height: "auto" }}
               />
               <h3 className="consultant-header-title">For Investors</h3>
             </div>

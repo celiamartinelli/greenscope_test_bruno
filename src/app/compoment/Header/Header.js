@@ -35,6 +35,7 @@ export default function Header() {
                   alt="arrow-down"
                   width={10}
                   height={10}
+                  style={{ width: "auto", height: "auto" }}
                   className={isHoveredSolutions ? "rotate" : ""}
                 />
                 {isHoveredSolutions && (
@@ -57,6 +58,7 @@ export default function Header() {
                   width={10}
                   height={10}
                   className={isHoveredPlatform ? "rotate" : ""}
+                  style={{ width: "auto", height: "auto" }}
                 />
                 {isHoveredPlatform && (
                   <div className="dropdown-section">

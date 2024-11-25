@@ -39,6 +39,7 @@ export default function Hero() {
             alt="logo-graphik"
             width={64}
             height={64}
+            style={{ width: "auto", height: "auto" }}
           />
           <Link className="hero-link" href="#">
             +500 companies use Greenscope

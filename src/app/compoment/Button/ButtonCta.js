@@ -34,6 +34,7 @@ export default function ButtonCta() {
         alt="arrow-rigth-purple"
         width={16}
         height={16}
+        style={{ width: "auto", height: "auto" }}
       />
     </button>
   );

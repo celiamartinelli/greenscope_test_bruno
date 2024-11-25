@@ -118,6 +118,7 @@ export default function QuoteSection() {
                     alt={item.imgLogo}
                     width={16}
                     height={16}
+                    style={{ width: "auto", height: "auto" }}
                   />
                   <h4 className="quote-article-footer-title">
                     {item.description.split(" - ")[0]}
