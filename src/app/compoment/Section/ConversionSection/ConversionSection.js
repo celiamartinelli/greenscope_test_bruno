@@ -14,7 +14,7 @@ export default function ConversionSection() {
         <div className="conversion-block">
           <p className="conversion-text">
             Nos experts vous accompagnent sur toute la verticale ESG/RSE de
-            votre fonds d&apos;investissement ou de votre entreprise : 
+            votre fonds d&apos;investissement ou de votre entreprise :
           </p>
           <div>
             <ButtonCta />

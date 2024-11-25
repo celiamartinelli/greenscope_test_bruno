@@ -1,6 +1,5 @@
 .consultantbis {
   height: 766px;
-  /* background-color: lightseagreen; */
   color: var(--primary-dark-green);
   position: relative;
 }
@@ -25,7 +24,6 @@
   position: absolute;
   display: flex;
   flex-direction: row;
-  /* background-color: lightgray; */
   width: 1192px;
   height: 330px;
   top: 316px;
@@ -71,7 +69,6 @@
 .consultantbis-underline-learn-white,
 .consultantbis-underline-learn-black {
   position: relative;
-  /* background-color: lightcoral; */
 }
 
 .consultantbis-underline-learn-black::after {

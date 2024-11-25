@@ -70,12 +70,8 @@ export default function SolutionSection() {
     setTimeout(() => {
       setCurrentSection(id);
       setIsAnimating(false);
-    }, 500); // Durée de l'animation
+    }, 300);
   };
-
-  // const handleSectionChange = (id) => {
-  //   setCurrentSection(id);
-  // };
 
   const currentData = data.find((item) => item.id === currentSection);
 
@@ -103,7 +99,7 @@ export default function SolutionSection() {
 
       <section
         className={`solution-section bg-${currentData.name} ${
-          currentSection === currentData.id ? "active" : ""
+          isAnimating ? "animating" : "active"
         }`}
       >
         {data

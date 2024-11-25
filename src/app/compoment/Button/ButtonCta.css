@@ -15,9 +15,40 @@
   font-size: 16px;
   font-weight: 500;
   line-height: 19.2px;
-  transition: transform 0.1s ease;
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+  transition: color 0.3s ease;
 }
 
 .buttonCta:active {
   transform: scale(0.95);
+}
+
+.buttonCta::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--secondary-medium-purple);
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.8s ease;
+  z-index: -1;
+}
+
+.buttonCta:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.buttonCta:hover {
+  color: white;
+}
+
+.buttonCta > * {
+  position: relative;
+  z-index: 1;
 }

@@ -1,13 +1,14 @@
 .buttonCtaOutline {
   display: flex;
   flex-direction: row;
+  align-items: center;
   padding: 12px;
-  width: 175px; /* Correction de la largeur */
-  height: 40px; /* Correction de la hauteur */
-  color: var(--Secondary-Medium-Purple, #946bb6);
-  border: 1px solid;
+  width: 175px;
+  height: 40px;
+  border: solid 1px;
+  color: var(--secondary-medium-purple);
   border-radius: 6px;
-  border-color: var(--Primary-Light-Purple, #e2d4fe);
+  border-color: var(--primary-light-purple);
   font-family: var(--font-neue-montreal);
   font-size: 13px;
   font-weight: 500;

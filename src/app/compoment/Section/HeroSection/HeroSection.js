@@ -14,7 +14,6 @@ export default function Hero() {
             alt="clip-video"
             width={784}
             height={440}
-            controls
             autoPlay
             loop
             muted
